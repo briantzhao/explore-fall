@@ -62,5 +62,5 @@ export {
     getCard,
     postCard,
     putCard,
-    deleteCard
+    deleteCard,
 };

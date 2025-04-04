@@ -1,5 +1,4 @@
 import express from 'express';
-import Card from '../models/card.model.js';
 const router = express.Router();
 import {getCards, getCard, postCard, putCard, deleteCard} from '../controllers/card.controller.js';
 
