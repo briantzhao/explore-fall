@@ -11,10 +11,16 @@ function SearchPage() {
         navigate(`/results?query=${query}`);
       }
     };
+    const advancedSearch = (e) => {
+      navigate(`/advanced`);
+    }
     return (
-    <div className="App">
-      <form>
-        <label>Search for Cards</label>
+    <div className="SearchPage">
+      <form className="SearchForm">
+        <h1 className="SearchTitle">Explore Fall</h1>
+        <div className="SearchMain">
+        <label className="SearchBarLabel">Search for cards</label>
+        <div classname="SearchBar">
         <input type="text" 
         id="search" 
         value={query} 
@@ -26,6 +32,13 @@ function SearchPage() {
         >
           Search
         </button>
+        </div>
+        <div className="AdditionalButtons">
+          <button onClick={advancedSearch}>
+            Advanced Search
+          </button>
+        </div>
+        </div>
         </form>
         
     </div>
